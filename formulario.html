@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        CRUD:
+        Create -> criar
+        Ready -> leitura 
+        Updete -> atualização
+        Delete -> deletar
+     -->
+
+     <!-- Atributos:
+        "action" -> caminho para onde vai a requisição e envio dos dados preenchidos.
+        "method" -> diz o modo de envio das insformações pelo navegador:
+        GET -> solicita dados. quando envio, os dados são exibidos na URL do navegador.
+        POST -> envia dados e não exibe na URL.
+    -->
+     <form action="contato.php" method="post">
+        <!-- 
+            para o click no label selecionar o campo o valor 
+            de for e id tem que ser iguais
+         -->
+        <label for="nomeCompleto">Nome Completo</label>
+        <input type="text" name="nomeCompleto" id="nomeCompleto">
+
+        <!-- input para email -->
+        <input type="email" name="email" placeholder="E-mail">
+
+        <!-- campo numerico -->
+        <input type="number" name="numero" placeholder="Número"">
+
+        <!-- campo de senha -->
+        <input type="password" name="senha" placeholder="Senha">
+
+         <br>
+
+        <!-- input file para envio de um arquivos -->
+        <input type="file" name="arquivo">
+
+        <br>
+
+        <!-- input file para envio de vários arquivos -->
+        <input type="file" name="arquivos" multiple>
+
+        <!-- select, lista de dados agrupados -->
+        <select name="estados" required multiple>
+            <option value="">Selecione um estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="PR">Paraná</option>
+        </select>
+
+        <!-- campo oculto -->
+        <input type="hidden" name="id" value="45876">
+
+        <!-- input mostrar uma imagens
+        <input type="image" src="./img/img1.png" alt="">
+            -->
+            
+        <!-- input de  selecionar cor-->
+        <input type="color" name="cor">
+
+        <!-- campo submit -->
+        <input type="submit" value="ENVIAR">
+
+        <button type="submit">ENVIO COM BUTTON</button>
+        <input type="submit" value="ENVIAR">
+        
+     </form>
+
+
+</body>
+</html>

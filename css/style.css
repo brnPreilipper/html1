@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+
 /* SELETORES:
 
     SELETORE DE TAG -> DIV, SPAN, P
@@ -23,15 +25,67 @@
     padding: 0;
 }
 
+body {
+    /* 
+    tipos de cores: 
+    - hexadecimal -> #001122 - composto por seis numeros ou letras RGB
+      00 - Red
+      11 - Green
+      22 - Blue
+    -Nome das cores -> black, red, yellow, brown, green, blue
+    -RGB -> rgb(R, G, B) - três valores separados por virgura indo de 0 até 255.
+    -RGBA -> rgba(R, G, B, A) 0 até 1 - o A é referente a transparência.
+    */
+    background: url(./cerveja-min.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+    /* background-position: top right bottom left  */
+    background-color: brown;
+}
+
 .bloco {
     width: 100px;
     height: 100px;
     background-color: red;
-    margin: 10px 10px 10px 10px;
-    /*       T    R     B    L */
+    margin: 10px;
+    /* margin: 10px 10px 10px 10px;  /*   aplica separado nos 4 lados
+             T    R     B    L */ 
+    /* margin: 10px; /*aplica em todos os lados*/
+    /* margin: 10px 30px; aplica TB   LR */ 
+
+    padding: 15px; /*No Padding possui a mesma regra de quatro lados, tem regra cruzada também
+    padding: 10px;
+    padding: 5px 10px 15px 20px;
+    padding: 10px 25px
+
+    /* 
+    border: expessura tipo cor.
+    tipos: 
+    none -> não setada.
+    dotted -> borda pontilada.
+    hidden -> borda oculta.
+    dashed -> borda tracejada.
+    solid -> linha continua.
+    double -> borda dupla.
+    groove -> borda entalhada.
+    ridge -> borda com ressalto
+    */
+    border: 4px solid green;
+
 }
 
 div h1 {
     color: yellow;
+}
+
+.bloco p {
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Roboto', monospace;
+    font-weight: 100;
+    /* font-style: italic; */
+    /* text-decoration: line-through; */
+    /* text-transform: uppercase; */
 }
 

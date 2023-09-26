@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cambio{
+    width: 600px;
+    background-color: #000;
+    border-spacing: 1px;
+    filter: sepia()
+}
+.cambio td, .cambio th{
+    border: 1px solid transparent;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 3px;
+    text-align: center;
+}
+/* .cambio td.left{
+    text-align: left;
+    -utilizado para alinhar a esquerda a primeira linha somente do "td" ou a regra abaixo:
+} */
+.cambio td:first-of-type{
+    text-align: left;
+}
+.cambio th{
+    background-color: #ccc;
+}
+
+/* regra para tabela listrada ou zebrada:
+odd -> impar; even -> par;
+*/
+.cambio tr:nth-child(even) td{
+    background-color: bisque;
+}

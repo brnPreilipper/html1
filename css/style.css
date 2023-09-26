@@ -72,6 +72,7 @@ body {
     ridge -> borda com ressalto
     */
     border: 4px solid green;
+    
 
 }
 
@@ -87,5 +88,16 @@ div h1 {
     /* font-style: italic; */
     /* text-decoration: line-through; */
     /* text-transform: uppercase; */
+}
+
+.bloco button {
+    padding: 6px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+
+.bloco button:hover {
+    opacity: 0.5;  /*opacity serve para criar opacidade na estilização */
 }
 

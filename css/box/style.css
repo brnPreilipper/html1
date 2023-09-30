@@ -1,0 +1,19 @@
+.container{
+    width: 50vw;
+    height: 50vw;
+    background-color: blueviolet;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+
+}
+.container .guia{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(7, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}

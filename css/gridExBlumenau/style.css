@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 30px;
+}
+
+
+/* NAVEGACAO */
+.navegacao{
+    width: 100%;
+    height: 102px;
+    padding: 0 40px;
+    background-color: #feb7b7;
+}
+
+.navegacao img{
+    float: left;
+}
+
+.navegacao ul{
+    float: left;
+    width: 75%;
+    text-align: right;
+}
+
+.navegacao ul li{
+    display: inline-block;
+}
+
+.navegacao ul li a{
+    display: block;
+    padding: 40px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: .4s ease-out;
+}
+
+.navegacao ul li a:hover{
+    background-color: #f98c8c;
+    transition: .4s ease-in;
+}
+
+/* DESTAQUES */
+
+#destaques article header h3{
+    display: inline-block;
+    background-color: #cc2929;
+    padding: 4px 8px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+#destaques article div.content{
+    min-height: 300px;
+    background-color:#fff;
+    box-shadow: 0 3px 3px 1px rgba(0,0,0,0.4);
+    text-align: center;
+}
+#destaques article div .title{
+    min-height: 100px;
+}
+#destaques article div .action{
+    padding: 10px 0;
+}
+#destaques article img{
+    width: 100%;
+}
+#destaques article h4{
+    padding: 4px 8px;
+    text-align: left;
+}
+
+/* COMPONENTES PADRÕES */
+.btn{
+    display: inline-block;
+    background-color:#d65f5f;
+    padding: 8px 25px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* RODAPE */
+.rodape{
+    height: 150px;
+    padding: 15px 0;
+    background-color: #feb7b7;
+}
+.container-footer{
+    width:  100%;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+}
+.row{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.center-align{
+    text-align: center;
+}
+.right-align{
+    text-align: right;
+}
+
+.container-footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-footer li{
+    list-style: none;
+}
+

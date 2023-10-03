@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.container{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.col{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        display: block;
+    }
+    .col{
+        font-size: 3em;
+    }
+}

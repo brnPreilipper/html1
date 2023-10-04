@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0;0,300;0,700;1,100;1,300;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+nav{
+    width: 100vw;
+    height: 80px;
+    background-color: #fbcbcb;
+    display: flex;
+    padding: 0 100px;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    padding: 30.4px 20px;
+    text-decoration: none;
+    color: #ED3136;
+    transition: 0.4s ease-out;
+}
+nav ul li a:hover{
+    background-color: #fbb1b1;
+    transition: 0.4s ease-in;
+}
+
+/* conteudo principal */
+main{
+    display:flex;
+    /* background-color: #ED3136; */
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+main .container{
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+main .container .coluna{
+    width: 25%;
+    height: 200px;
+    background-color: #ED3136;
+    margin: 2%;
+}
+
+/* rodapé */
+footer{
+    width: 100vw;
+    display: flex;
+    height: 190px;
+    background-color: #fbcbcb;
+    justify-content: center;
+}
+footer .container{
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .container div li{
+    list-style: none;
+    text-align: center;
+}

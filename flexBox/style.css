@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+FLEX-DIRECTION tipos
+-row: padrão;
+-row-reverse: inverte a ordem;
+-column: tranforma em coluna/bloco;
+-column-reverse: inverte a ordem a coluna/bloco;
+*/
+
+/* 
+FLEX-WRAP: 
+-nowrap: padrão;
+-wrap: faz as colunas ter seu tamanho correto e joga para baixo as demais quando atinge o limite;
+-wrap-reverse: inverte a ordem;
+*/
+
+/* FLEX-FLOW:
+-row nowrap: define o eixo 
+-column nowrap: ;
+-colum wrap: ;
+*/
+
+/* JUSTIFY-CONTENT: alinhamento do contudo:
+-flex-start: padrão;
+-flex-end: alinha os itens a direita;
+-center: alinha ao centro;
+-space-between: usada para controlar o espaço entre os itens de um contêiner flexível ao longo do eixo principal. Ela distribui o espaço disponível de forma igual entre os itens.
+-space-around: distribuir o espaço disponível entre os elementos de um container de forma uniforme, com espaços iguais antes e depois de cada elemento;
+-space-evenly: que controla a distribuição de espaço entre os itens de um contêiner em um layout flexbox ou grid; 
+*/
+
+/* ALING-ITENS:
+-flex-start- padrão;
+-flex-end:
+-center: centraliza;
+-stretch: Estende um elemento para preencher todo o espaço disponível dentro de seu contêiner;
+-baseline: linha de base vertical para o alinhamento de texto e elementos, garantindo que o texto e os elementos se alinhem uniformemente em uma página da web;
+ */
+
+ /* ALING-CONTENT:  
+ -flex-start:
+ -flex-end:
+ -center:
+ -stretch:
+ -space-between:
+ -space-around:
+ */
+
+ /* FLEX-GROW: 
+ */
+
+ /* FLEX-SHRINK:
+ encolhe o conteudo para o uso dos demais campos 
+ */
+
+.container{
+    display: flex;
+    height: 100vh;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* flex-flow: row nowrap; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* align-content:space-between; */
+}
+.item{
+    width: 40%;
+    /* height: 100px; */
+    background-color: red;
+    text-align: center;
+    font-size: 1.5em;
+    border: 4px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
